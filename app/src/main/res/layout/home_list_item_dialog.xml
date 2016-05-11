@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#DDDDDD"
+    style="HomeListItemDialogStyle" >
+
+    <Button
+        android:id="@+id/hlid_tranlate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="翻译" />
+    <Button
+        android:id="@+id/hlid_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="朗读" />
+    <Button
+        android:id="@+id/hlid_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="复制" />
+    <Button
+        android:id="@+id/hlid_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除" />
+
+</LinearLayout>

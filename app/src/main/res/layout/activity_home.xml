@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/home_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F9F9F9">
+        <ImageView 
+            android:id="@+id/home_top_left_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_menu_btn"
+            android:layout_alignParentLeft="true"/>
+        <ImageView 
+            android:id="@+id/home_top_right_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingRight="5dp"
+            android:src="@drawable/home_edit_btn"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/home_btn1"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="添加" />
+
+        <EditText
+            android:id="@+id/home_et1"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/home_btn1"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/home_lv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"  
+        android:divider="#00000000"  
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="55dp" >
+    </ListView>
+
+</RelativeLayout>
