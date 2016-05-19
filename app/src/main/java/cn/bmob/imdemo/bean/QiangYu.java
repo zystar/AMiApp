@@ -26,6 +26,14 @@ public class QiangYu extends BmobObject implements Serializable{
 	private boolean myLove;//赞
 	private BmobRelation relation;
 
+	public QiangYu(){
+
+	}
+	public QiangYu(User author, String content, BmobFile Contentfigureurl){
+		this.author = author;
+		this.content = content;
+		this.Contentfigureurl = Contentfigureurl;
+	}
 	public BmobRelation getRelation() {
 		return relation;
 	}

@@ -8,12 +8,12 @@
         android:layout_height="wrap_content"
         android:paddingLeft="12dp"
         android:paddingTop="12dp">
-        <cn.bmob.imdemo.ui.CircleImageView
+        <ImageView
 	        android:id="@+id/imageView1"
 	        android:layout_width="60dp"
 	        android:layout_height="60dp"
 	        android:src="@drawable/ic_launcher" />
-        <cn.bmob.imdemo.ui.CircleImageView
+        <ImageView
 	        android:id="@+id/alv_iv_nation"
 	        android:layout_width="20dp"
 	        android:layout_height="20dp"
@@ -64,7 +64,7 @@
 	        android:maxHeight="200dp"
 	        android:scaleType="fitStart"
 	        android:layout_marginTop="10dp"
-	        android:src="@drawable/ic_launcher" />
+	        android:background="@drawable/ic_launcher" />
 	    <LinearLayout
 	        android:layout_width="match_parent"
 	        android:layout_height="match_parent"

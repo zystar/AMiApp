@@ -103,9 +103,9 @@
     <orderEntry type="library" exported="" name="support-v4-23.2.1" level="project" />
     <orderEntry type="library" exported="" name="bmob-sdk-3.4.6" level="project" />
     <orderEntry type="library" exported="" name="org.apache.http.legacy" level="project" />
-    <orderEntry type="library" exported="" name="support-annotations-23.2.1" level="project" />
     <orderEntry type="library" exported="" name="okio-1.4.0" level="project" />
     <orderEntry type="library" exported="" name="1_okio-1.4.0" level="project" />
+    <orderEntry type="library" exported="" name="support-annotations-23.2.1" level="project" />
     <orderEntry type="library" exported="" name="com.baidu.tts_2.2.4.20160405_6a7eb4e_release" level="project" />
     <orderEntry type="library" exported="" name="commons-codec-1.9" level="project" />
   </component>
