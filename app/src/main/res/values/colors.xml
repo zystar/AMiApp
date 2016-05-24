@@ -33,5 +33,6 @@
 
     <!--AMiApp-->
     <color name="theme_color">#bbbbbb</color>
+    <color name="second_color">#888888</color>
 
 </resources>

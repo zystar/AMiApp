@@ -4,7 +4,10 @@
 package cn.bmob.imdemo.ui;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
@@ -40,6 +43,15 @@ public class SearchActivity extends Activity {
 		setContentView(R.layout.activity_search);
 		init();
 		fetchData();
+		list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+				Intent intent = new Intent();
+				intent.setClass(SearchActivity.this, CommentActivity.class);
+				intent.putExtra("data", mListItems.get(position/* - 1*/));
+				startActivity(intent);
+			}
+		});
 	}
 	private void init(){
 		list = (ListView) findViewById(R.id.listView1);

@@ -70,20 +70,37 @@
 	        android:layout_height="match_parent"
 	        android:orientation="horizontal"
 	        android:padding="10dp">
-	        <ImageView
-		        android:id="@+id/imageView3"
-		        android:layout_width="40dp"
-		        android:layout_height="wrap_content"
-		        android:src="@drawable/comment"/>
-	        <ImageView
+			<TextView
+				android:id="@+id/item_action_love"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:drawableLeft="@drawable/like"
+				android:text="985赞"
+				android:textColor="#888888"
+				android:layout_marginTop="4dip"
+				android:layout_marginBottom="4dip"
+				android:layout_marginLeft="8dip"
+				android:layout_marginRight="8dip"
+				android:gravity="center"
+				/>
+			<ImageView
 		        android:layout_width="40dp"
 		        android:layout_height="wrap_content"
 		        android:src="@drawable/separation_line"/>
-	        <ImageView
-		        android:id="@+id/imageView5"
-		        android:layout_width="40dp"
-		        android:layout_height="wrap_content"
-		        android:src="@drawable/like"/>
+			<TextView
+				android:id="@+id/item_action_comment"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:drawableLeft="@drawable/comment"
+				android:gravity="center"
+				android:text="评论"
+				android:textColor="#888888"
+				android:layout_marginTop="4dip"
+				android:layout_marginBottom="4dip"
+				android:layout_marginLeft="8dip"
+				android:layout_marginRight="8dip"
+				/>
 	        <ImageView
 		        android:layout_width="40dp"
 		        android:layout_height="wrap_content"

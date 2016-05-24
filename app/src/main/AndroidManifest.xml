@@ -49,6 +49,7 @@
         <activity android:name=".ui.SearchActivity"></activity>
         <activity android:name=".ui.AddActivity"></activity>
         <activity android:name=".ui.MoreActivity"></activity>
+        <activity android:name=".ui.CommentActivity"></activity>
         <activity
             android:name=".ui.ChatActivity"
             android:screenOrientation="portrait"
