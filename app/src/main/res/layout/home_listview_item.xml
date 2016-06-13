@@ -3,48 +3,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal" >
-    <RelativeLayout 
+    <RelativeLayout
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:padding="10dp">
-        <cn.bmob.imdemo.ui.CircleImageView
+        <ImageView
             android:id="@+id/hli_img_userhead"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/user"/>
-        <cn.bmob.imdemo.ui.CircleImageView
-            android:id="@+id/hli_img_userlanguage"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:src="@drawable/nation_img_en"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_txt_collect"
+            android:layout_alignParentRight="true"/>
     </RelativeLayout>
-    <LinearLayout 
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/chat_left_qp">
+        android:layout_marginTop="10dp"
+        android:background="@drawable/img_bg_collect">
 	    <TextView 
 	        android:id="@+id/home_lv_item_tv1"
 		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:gravity="center_vertical"
-		    android:paddingLeft="25dp"
-		    android:paddingTop="25dp"
-		    android:paddingRight="25dp"
-		    android:lineSpacingMultiplier="1.5"
-		    android:text="收藏语言显示区域" />  
+		    android:text="收藏语言显示区域" />
 	    
 	    <TextView 
 	        android:id="@+id/home_lv_item_tv2"
 		    android:layout_width="match_parent"
 		    android:layout_height="wrap_content"
 		    android:gravity="center_vertical"
-		    android:paddingLeft="25dp"
-		    android:paddingBottom="25dp"
-		    android:paddingRight="25dp"
-		    android:lineSpacingMultiplier="1.5"
 		    android:visibility="gone"
 		    android:text="正在翻译..." />  
     </LinearLayout>

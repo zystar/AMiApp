@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v4.widget.DrawerLayout.DrawerListener;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
@@ -14,6 +15,7 @@ import android.widget.ListView;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
 import android.widget.TabHost;
+import android.widget.Toast;
 
 import cn.bmob.imdemo.R;
 import cn.bmob.imdemo.ui.home.HomeActivity;
@@ -185,8 +187,14 @@ public class MainActivity extends TabActivity implements OnCheckedChangeListener
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, menuList);
         mLv.setAdapter(adapter);
-		/*LayoutInflater flater = LayoutInflater.from(this);
+		LayoutInflater flater = LayoutInflater.from(this);
 		mHomeActivity = flater.inflate(R.layout.activity_home, null);
-		mHomeTopLeftImg = (ImageView)mHomeActivity.findViewById(R.id.home_top_left_img);*/
+		mHomeTopLeftImg = (ImageView)mHomeActivity.findViewById(R.id.home_top_left_img);
+		mHomeTopLeftImg.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Toast.makeText(MainActivity.this, "mHomeTopLeftImg", Toast.LENGTH_SHORT).show();
+			}
+		});
 	}
 }

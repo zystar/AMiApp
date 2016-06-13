@@ -44,7 +44,8 @@
         <activity android:name=".ui.LoginActivity"></activity>
         <activity android:name=".ui.IMActivity"></activity>
         <activity android:name=".ui.RegisterActivity"></activity>
-        <activity android:name=".ui.MainActivity"></activity>
+        <activity android:name=".ui.MainActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"></activity>
         <activity android:name=".ui.home.HomeActivity"></activity>
         <activity android:name=".ui.SearchActivity"></activity>
         <activity android:name=".ui.AddActivity"></activity>
